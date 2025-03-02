@@ -2,6 +2,9 @@
 
 A web application built with React, TypeScript, and Tailwind CSS that helps users compare different screen sizes visually and numerically.
 
+![Screen Size Comparison Tool](https://i.imgur.com/HSoyq4b.png)
+![Comparison Example](https://i.imgur.com/fiq4RhB.png)
+
 ## Features
 
 - Compare multiple screen sizes simultaneously
