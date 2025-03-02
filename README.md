@@ -10,7 +10,6 @@ A web application built with React, TypeScript, and Tailwind CSS that helps user
 - Calculate width, height, and area differences between screens
 - Dark mode support
 - Responsive design
-- URL-shareable comparisons
 
 ## Tech Stack
 
