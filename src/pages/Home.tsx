@@ -2,9 +2,15 @@ import type React from "react";
 import { useState, useEffect, useCallback } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import type { ScreenSize } from "../types";
-import { PlusCircle, Trash2, Monitor, BarChart3 } from "lucide-react";
+import {
+  PlusCircle,
+  Trash2,
+  Monitor,
+  BarChart3,
+  TriangleAlert,
+} from "lucide-react";
 
-export default function IndexPage() {
+export default function Home() {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const [screens, setScreens] = useState<ScreenSize[]>([
@@ -103,8 +109,7 @@ export default function IndexPage() {
           Screen Size Comparison
         </h1>
         <p className="text-xl  text-zinc-600 dark:text-zinc-300">
-          Compare different screen sizes to see how they stack up against each
-          other
+          Compare different screen sizes from your own!
         </p>
       </div>
 
@@ -114,8 +119,9 @@ export default function IndexPage() {
             <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-white">
               Enter Screen Sizes
             </h2>
-            <p className="text-zinc-600 dark:text-zinc-300">
-              Enter the screen sizes and aspect ratios you want to compare.
+            <p className="text-zinc-600 dark:text-zinc-300 flex items-center gap-1">
+              <TriangleAlert size={22} /> Limitation: you can only compare to
+              sizes that are smaller than your screen.
             </p>
           </div>
 

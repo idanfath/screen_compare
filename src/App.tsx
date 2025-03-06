@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import IndexPage from "./pages/IndexPage";
 import ComparisonPage from "./pages/ComparisonPage";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div className="no-scrollbar">
       <Router>
         <Routes>
-          <Route path="/" element={<IndexPage />} />
+          <Route path="/" element={<Home />} />
           <Route path="/compare" element={<ComparisonPage />} />
         </Routes>
       </Router>
